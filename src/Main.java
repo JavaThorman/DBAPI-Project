@@ -1,5 +1,12 @@
+import src.KeyReader;
+import src.SpotifySearch;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        KeyReader keyReader = new KeyReader("RapidAPI");
+        SpotifySearch spotifySearch = new SpotifySearch();
+        spotifySearch.searchArtist("Tupac");
+
     }
 }
